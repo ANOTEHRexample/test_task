@@ -31,7 +31,7 @@ class CharacterModel {
   });
 
   factory CharacterModel.fromJson(Map<String, dynamic> json) =>
-      _$GetCharactersResultsModelFromJson(json);
+      _$CharacterModelFromJson(json);
 
-  Map<String, dynamic> toJson() => _$GetCharactersResultsModelToJson(this);
+  Map<String, dynamic> toJson() => _$CharacterModelToJson(this);
 }

@@ -6,8 +6,7 @@ part of 'character_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-CharacterModel _$GetCharactersResultsModelFromJson(
-        Map<String, dynamic> json) =>
+CharacterModel _$CharacterModelFromJson(Map<String, dynamic> json) =>
     CharacterModel(
       id: json['id'] as String,
       name: json['name'] as String,
@@ -22,8 +21,7 @@ CharacterModel _$GetCharactersResultsModelFromJson(
       failedAttempt: json['failedAttempt'] as int? ?? 0,
     );
 
-Map<String, dynamic> _$GetCharactersResultsModelToJson(
-        CharacterModel instance) =>
+Map<String, dynamic> _$CharacterModelToJson(CharacterModel instance) =>
     <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
